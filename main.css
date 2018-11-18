@@ -1,0 +1,67 @@
+*{
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
+.container-fluid{
+    padding-bottom: 2rem;
+    background-color: #ff5c33;
+
+   
+    
+}
+.christmas{
+     font-size: 3.5rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      font-family: 'EB Garamond', serif;
+      white-space: nowrap;
+}
+.christmas::before{
+    content:url(assets/gift.png);
+     position: relative;
+      left:  -20px;
+      top: 2px;
+
+}
+.christmas::after{
+    content:url(assets/gift.png);
+     position: relative;
+   right:  -20px;
+   top: 2px;
+
+}
+.container-image{
+    width: 400px;
+    height: 270px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    
+}
+.carousel-inner, .carousel-inner img{
+    min-width: 400px;
+    min-height: 270px;
+}
+
+
+@media(max-width: 500px){
+    .container-image{
+    width: 300px;
+    height: 200px;
+   
+    
+}
+    
+  .carousel-inner, .carousel-inner img{
+    min-width: 300px;
+    min-height: 200px;
+}  
+    .christmas{
+        font-size: 2.5rem;
+    }  
+    
+    
+} 
+
+
