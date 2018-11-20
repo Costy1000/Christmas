@@ -7,14 +7,15 @@
     <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,700" rel="stylesheet">  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">	 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Christmas</title>
 </head>
 <body>
 
-     
-   <div class="container-fluid xs-1 text-center">
-       <h1 class="christmas">Christmas is coming</h1>
+   
+   <div class="header">
+       <h1 class="christmas">Winter is coming</h1>
        
        
     <div class="container-image"> 
@@ -24,7 +25,9 @@
           <li data-target="#Carousel" data-slide-to="1"></li> 
           <li data-target="#Carousel" data-slide-to="2"></li>
           <li data-target="#Carousel" data-slide-to="3"></li>   
-          <li data-target="#Carousel" data-slide-to="4"></li>     
+          <li data-target="#Carousel" data-slide-to="4"></li>  
+          <li data-target="#Carousel" data-slide-to="5"></li>  
+                
         </ol>
         <div class="carousel-inner">
             <div class="item active">
@@ -42,6 +45,10 @@
             <div class="item">
                 <img src="assets/masa-de-craciun.jpg" alt="masa-de-craciun">
             </div>
+            <div class="item">
+                <img src="assets/artificii.jpg" alt="artificii">
+            </div>
+            
         </div>
         <a class="left carousel-control" href="#Carousel" data-slide="prev">
            <span class="glyphicon glyphicon-chevron-left"></span>
@@ -52,8 +59,53 @@
          <span class="sr-only">Next</span>
         </a>   
       </div> 
+    </div>    
    </div>
-        
-   </div>      
+   <div class="wrapper"> 	
+    <div class="text">
+     <p>Iata ca mai este putin si vine iarna, bine teoretic, ca practic in unele zone a venit pentru ca a inceput  sa ninga inca  din noiembrie, sincer pentru mine cand ma gandesc la ninsoare cu un ochi rad si cu altul plang, cand eram mic era mai ok ca mergeam la sanie,  care era activitatea mea principala in acest sezon dar acum cand ma gandesc ca daca ninge foarte mult trebuie sa dau la lopata parca nu mai astept cu nerabdare sa ninga, sa numai zic ca atunci cand se forma gheata era jale pentru picioare,  noroc cu aceste sarbatori care fac pentru mine iarna al 2-lea cel mai frumos anotimp, aici ma refer in special la Sf Nicolae, Craciun si Revelion( fara suparare Sf.Ion,
+     Sf.Vasile), mai jos o sa va spun ce farmec are pentru mine fiecare sarbatoare in parte</p> 
+    </div>   
+    <div class="table">
+     <div class="bar">
+      <ul class="bar-nav">
+           
+       <li><button class="ab"  onclick="backgroundFunction(event, 'Nicolae')" data-toggle="tab" href="#Nicolae">Sf.Nicolae</button></li>
+       <li><button class="ab" onclick="backgroundFunction(event, 'Craciun')" data-toggle="tab" href="#Craciun">Craciun</button></li> 
+       <li><button class="ab" onclick="backgroundFunction(event, 'Revelion')" data-toggle="tab" href="#Revelion">Revelion</button></li>
+     </ul>
+		 
+	 </div>	 
+	 
+     <div class="tab-content">
+        <div id="Nicolae" class="tab-pane fade">
+           <p>Practic Sf.Nicolae da startul sarbatorilor de iarna, e adevarat acum nu mai are niciun farmec avand in vedere ca am 19 ani, dar pana la varsta de 8-9 ani Sf.Nicolae era pentru mine ca si Craciunul, stiam ca trebuia sa-mi aranjez ghetele ca sa primesc cadouri, singurul lucru care ma deranja era faptul ca inca mai eram la scoala de Sf. Nicolae si pana la vacanta mai aveam undeva in jur de doua saptamani</p>  
+        </div>
+        <div id="Craciun" class="tab-pane fade ">
+           <p>Cu Craciunul in schimb este alta poveste, farmecul acestei sarbatori ramane acelasi pe fiecare an,parca nici-o instalatie sau niciun brad nu arata mai frumos ca in ziua de Craciun, dar cel mai mare farmec este cel  familial unde toti ne strangem la masa si parca pentru cateva zile uitam de problemele pe care le-am intampinat pe parcusul anului si ne bucuram de prezent</p>  
+        </div>
+        <div id="Revelion" class="tab-pane fade">
+          <p>Si iata ca am ajuns si la ultima sarbatoare importanta pentru mine si anume Anul Nou, aici farmecul consta in distractia cu prietenii, arunactul petardelor si privirea pe cer al artificilor la miezul noptii, parca dupa aceasta sarbatoare iarna nu mai are niciun farmec si parca imi doresc sa vina vara cat mai repede</p>  
+        </div>
+     </div>
+    </div>
+   </div>	   
+   <footer class="green">  
+	 <h1 class="brad">Sarbatori Fericite</h1>	
+		
+   </footer>
+   
+  <script>
+ 
+	  function backgroundFunction(evt,name){
+		  var ab;
+	      ab = document.getElementsByClassName("ab");
+	  for (i = 0; i < ab.length; i++) {
+        ab[i].className = ab[i].className.replace(" active", "");
+    }
+	  evt.currentTarget.className += " active";
+		  
+	  }
+  </script>	   
 </body>    
 </html>
