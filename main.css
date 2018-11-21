@@ -62,24 +62,6 @@ body{
 }
 
 
-@media(max-width: 500px){
-    .container-image{
-    width: 300px;
-    height: 200px;
-   
-    
-}
-    
-  .carousel-inner, .carousel-inner img{
-    min-width: 300px;
-    min-height: 200px;
-}  
-    .christmas{
-        font-size: 2.5rem;
-    }  
-    
-    
-} 
 
 .wrapper{
 	
@@ -182,11 +164,30 @@ body{
 
 
 }
+                    /*=====================================================MEDIA QUERIES================================================*/
+@media(max-width: 500px){
+    .container-image{
+    width: 300px;
+    height: 200px;
+   
+    
+}
+    
+  .carousel-inner, .carousel-inner img{
+    min-width: 300px;
+    min-height: 200px;
+}  
+    .christmas{
+        font-size: 2.5rem;
+    }  
+    
+    
+} 
 
 
 
 
-@media (min-width: 800px){
+@media (min-width: 760px){
 .header, .wrapper, .green{
 
 	width: 90%;
@@ -221,7 +222,7 @@ body{
 	
 	
 }
-@media(max-width: 800px){
+@media(max-width: 760px){
 	.header{
 	    overflow: hidden;
 		width: 100%;
